@@ -1,0 +1,12 @@
+body { background-color: #f0f0f0; color: #333; font-family: Roboto, Arial, sans-serif; margin:0; display:flex; justify-content:center; align-items:center; height:100vh; }
+.chat-container { width: 400px; height: 600px; background: #fff; border-radius: 10px; display: flex; flex-direction: column; overflow: hidden; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+.chat-header { background:#442c2e; color:#fff; text-align:center; padding:10px; }
+.chat-box { flex:1; padding:10px; overflow-y:auto; border-bottom:1px solid #ddd; }
+.input-container { display:flex; padding:10px; }
+#user-input { flex:1; padding:10px; border:none; outline:none; border-top:1px solid #ddd; }
+button { padding:10px; background:#442c2e; color:#fff; border:none; cursor:pointer; border-radius:5px; }
+.typing-effect { border-right:0.1em solid #333; animation:typing 1.5s steps(30,end), blink-caret .75s step-end infinite; white-space:nowrap; overflow:hidden; }
+@keyframes typing { from{width:0} to{width:100%} } @keyframes blink-caret { 50%{border-color:transparent} }
+#landing-container { text-align:center; }
+.quick-button { margin:5px; padding:8px 12px; border:1px solid #ddd; border-radius:5px; cursor:pointer; }
+#theme-toggle { position:absolute; top:20px; right:20px; padding:8px; border:none; border-radius:5px; background:#666; color:#fff; cursor:pointer; }

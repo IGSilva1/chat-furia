@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chat da FURIA</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <script src="https://cdn.jsdelivr.net/npm/socket.io@4/dist/socket.io.min.js"></script>
+  <script src="{{ url_for('static', filename='script.js') }}" defer></script>
+</head>
+<body>
+  <div id="landing-container">
+    <h1>Bem-vindo ao Chat da FURIA!</h1>
+    <input type="text" id="name-input" placeholder="Digite seu nome..." autocomplete="off">
+    <button onclick="startChat()">Entrar no Chat</button>
+  </div>
+  <div class="chat-container" style="display:none;">
+    <div class="chat-header"><h2>Chat da FURIA</h2></div>
+    <div id="chat-box" class="chat-box"></div>
+    <div class="input-container">
+      <input type="text" id="user-input" placeholder="Digite sua mensagem...">
+      <button onclick="sendMessage()">Enviar</button>
+    </div>
+    <div id="quick-replies">
+      <button class="quick-button" onclick="sendQuickMessage('Qual o próximo jogo?')">Próximo Jogo</button>
+      <button class="quick-button" onclick="sendQuickMessage('Me fale sobre a FURIA!')">FURIA</button>
+      <button class="quick-button" onclick="sendQuickMessage('Qual o último placar?')">Último Placar</button>
+    </div>
+  </div>
+  <button id="theme-toggle">Mudar Tema</button>
+</body>
+</html>
