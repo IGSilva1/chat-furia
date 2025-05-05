@@ -30,3 +30,4 @@ Acesse http://localhost:5000
 - Build Command: `pip install -r requirements.txt`
 - Start Command: `python app.py`
 # chat-furia
+# chat-furia
